@@ -1,11 +1,8 @@
 package com.example.demo.ErrorInfo;
 
 /**
- * Created by admin on 2017/5/17.
  */
 public class ErrorInfo<T> {
-
-
 
     public static final Integer OK = 0;
     public static final Integer ERROR = 100;
@@ -13,7 +10,6 @@ public class ErrorInfo<T> {
     private String message;
     private String url;
     private T data;
-    // 省略getter和setter
 
 
     public static Integer getOK() {

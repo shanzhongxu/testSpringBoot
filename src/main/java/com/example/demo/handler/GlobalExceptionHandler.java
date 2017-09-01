@@ -22,7 +22,6 @@ public class GlobalExceptionHandler {
         ErrorInfo<String> r = new ErrorInfo<>();
         r.setMessage(e.getMsg());
         r.setCode(e.getCode());
-        r.setData("jsonErrorHandler");
         r.setUrl(req.getRequestURL().toString());
         return r;
     }
@@ -34,7 +33,6 @@ public class GlobalExceptionHandler {
         ErrorInfo<String> r = new ErrorInfo<>();
         r.setMessage(e.getMsg());
         r.setCode(e.getCode());
-        r.setData("jsonErrorHandler");
         r.setUrl(req.getRequestURL().toString());
         return r;
     }
@@ -52,17 +50,6 @@ public class GlobalExceptionHandler {
 
     public static final String DEFAULT_ERROR_VIEW = "error";
 
-
-
-//    @ExceptionHandler(value = ModulViewException.class)
-//  //@RequestMapping(produces = "text/html")
-//    public ModelAndView nullpinterHandler(HttpServletRequest req, ModulViewException e) {
-//        ModelAndView mav = new ModelAndView();
-//        mav.addObject("exception", e);
-//        mav.addObject("url", req.getRequestURL());
-//        mav.setViewName(DEFAULT_ERROR_VIEW);
-//        return mav;
-//    }
 
 
 
