@@ -5,6 +5,7 @@ import com.example.demo.exception.ModulViewException;
 import com.example.demo.exception.MyException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -26,6 +27,7 @@ import javax.servlet.http.HttpServletRequest;
  *                  每晚灯火阑珊处，夜难寐，加班狂。
  */
 @SpringBootApplication
+@ServletComponentScan
 public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
